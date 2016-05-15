@@ -1,0 +1,9 @@
+c:\users\airon\documents\visual studio 2015\Projects\Bot\Bot\bin\Debug\Bot.exe.config
+c:\users\airon\documents\visual studio 2015\Projects\Bot\Bot\bin\Debug\Bot.exe
+c:\users\airon\documents\visual studio 2015\Projects\Bot\Bot\bin\Debug\Bot.pdb
+c:\users\airon\documents\visual studio 2015\Projects\Bot\Bot\obj\Debug\Bot.csprojResolveAssemblyReference.cache
+c:\users\airon\documents\visual studio 2015\Projects\Bot\Bot\obj\Debug\Bot.Form.resources
+c:\users\airon\documents\visual studio 2015\Projects\Bot\Bot\obj\Debug\Bot.Properties.Resources.resources
+c:\users\airon\documents\visual studio 2015\Projects\Bot\Bot\obj\Debug\Bot.csproj.GenerateResource.Cache
+c:\users\airon\documents\visual studio 2015\Projects\Bot\Bot\obj\Debug\Bot.exe
+c:\users\airon\documents\visual studio 2015\Projects\Bot\Bot\obj\Debug\Bot.pdb
