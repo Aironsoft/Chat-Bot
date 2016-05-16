@@ -170,6 +170,12 @@ namespace Bot
             {
                 word = Words.ElementAt(i).ToLower();
 
+                if (word.Length == 0)
+                {
+                    Words.Remove(Words.ElementAt(i));
+                    break;
+                }
+
                 if (word.Substring(0, 1) != "*")
                 {
                     if (!Dictionary.Keys.Contains(word)) //else //если этого слова в словаре ещё нет
@@ -392,13 +398,14 @@ namespace Bot
         }
 
 
+
         string Processing(string Message)
         {
             string Reaction = null;
 
             if(DoNotKnowReaction)
             {
-                if(Message.Length >= 6 && Message.Substring(0, 6)=="*скажи")
+                if (Message.Length >= 6 && Message.Substring(0, 6) == "*скажи")
                 {
                     Message = Message.Substring(6);
                     Message = Message.Trim();
@@ -421,6 +428,10 @@ namespace Bot
                         UserLastReaction = "";
                         MyLastReaction = Message;
                     }
+                }
+                else
+                {
+                    DoNotKnowReaction = false;
                 }
             }
             if (Message.Length>=7 && Message.Substring(0, 7) == "*добавь")

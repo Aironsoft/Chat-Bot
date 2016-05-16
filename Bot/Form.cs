@@ -17,6 +17,9 @@ namespace Bot
             InitializeComponent();
 
             I = (I.Opening() as Me);
+
+            lbWordsCount.Text = I.Dictionary.Count.ToString();
+            lbPhrasesCount.Text = I.AllReactions.Count.ToString();
         }
 
         Interlocutor Itr = new Interlocutor();
@@ -54,6 +57,7 @@ namespace Bot
                 rtbDialog.ScrollToCaret();
 
                 lbWordsCount.Text = I.Dictionary.Count.ToString();
+                lbPhrasesCount.Text = I.AllReactions.Count.ToString();
             }
         }
 
@@ -84,6 +88,7 @@ namespace Bot
 
             char[] rej = { ',', '-', ' ' };
             lastWord = lastWord.Trim(rej);
+            lastWord = lastWord.ToLower();
 
             List<string> Predicted = I.Prediction(lastWord, null);
 
@@ -117,6 +122,8 @@ namespace Bot
                 predict3.Text = "";
             }
         }
+
+
 
         private void rtbInput_TextChanged(object sender, EventArgs e)
         {

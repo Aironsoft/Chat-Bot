@@ -43,6 +43,8 @@
             this.rbTraining = new System.Windows.Forms.RadioButton();
             this.lbWords = new System.Windows.Forms.Label();
             this.lbWordsCount = new System.Windows.Forms.Label();
+            this.lbPhrases = new System.Windows.Forms.Label();
+            this.lbPhrasesCount = new System.Windows.Forms.Label();
             this.pnlDialog.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,7 +67,7 @@
             this.rtbDialog.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbDialog.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rtbDialog.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.rtbDialog.Location = new System.Drawing.Point(3, 3);
             this.rtbDialog.Name = "rtbDialog";
             this.rtbDialog.ReadOnly = true;
@@ -206,7 +208,7 @@
             this.lbWords.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lbWords.AutoSize = true;
             this.lbWords.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbWords.Location = new System.Drawing.Point(227, 483);
+            this.lbWords.Location = new System.Drawing.Point(12, 483);
             this.lbWords.Name = "lbWords";
             this.lbWords.Size = new System.Drawing.Size(82, 12);
             this.lbWords.TabIndex = 13;
@@ -218,12 +220,36 @@
             this.lbWordsCount.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lbWordsCount.AutoSize = true;
             this.lbWordsCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbWordsCount.Location = new System.Drawing.Point(315, 483);
+            this.lbWordsCount.Location = new System.Drawing.Point(92, 483);
             this.lbWordsCount.Name = "lbWordsCount";
             this.lbWordsCount.Size = new System.Drawing.Size(14, 12);
             this.lbWordsCount.TabIndex = 14;
             this.lbWordsCount.Text = "...";
             this.lbWordsCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbPhrases
+            // 
+            this.lbPhrases.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.lbPhrases.AutoSize = true;
+            this.lbPhrases.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbPhrases.Location = new System.Drawing.Point(158, 483);
+            this.lbPhrases.Name = "lbPhrases";
+            this.lbPhrases.Size = new System.Drawing.Size(84, 12);
+            this.lbPhrases.TabIndex = 15;
+            this.lbPhrases.Text = "Количество фраз:";
+            this.lbPhrases.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbPhrasesCount
+            // 
+            this.lbPhrasesCount.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.lbPhrasesCount.AutoSize = true;
+            this.lbPhrasesCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbPhrasesCount.Location = new System.Drawing.Point(239, 483);
+            this.lbPhrasesCount.Name = "lbPhrasesCount";
+            this.lbPhrasesCount.Size = new System.Drawing.Size(14, 12);
+            this.lbPhrasesCount.TabIndex = 16;
+            this.lbPhrasesCount.Text = "...";
+            this.lbPhrasesCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form
             // 
@@ -231,6 +257,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.ForestGreen;
             this.ClientSize = new System.Drawing.Size(584, 501);
+            this.Controls.Add(this.lbPhrasesCount);
+            this.Controls.Add(this.lbPhrases);
             this.Controls.Add(this.lbWordsCount);
             this.Controls.Add(this.lbWords);
             this.Controls.Add(this.rbTraining);
@@ -271,6 +299,8 @@
         private System.Windows.Forms.RadioButton rbTraining;
         private System.Windows.Forms.Label lbWords;
         private System.Windows.Forms.Label lbWordsCount;
+        private System.Windows.Forms.Label lbPhrases;
+        private System.Windows.Forms.Label lbPhrasesCount;
     }
 }
 

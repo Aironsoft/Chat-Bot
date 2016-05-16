@@ -7,3 +7,12 @@ c:\users\airon\documents\visual studio 2015\Projects\Bot\Bot\obj\Debug\Bot.Prope
 c:\users\airon\documents\visual studio 2015\Projects\Bot\Bot\obj\Debug\Bot.csproj.GenerateResource.Cache
 c:\users\airon\documents\visual studio 2015\Projects\Bot\Bot\obj\Debug\Bot.exe
 c:\users\airon\documents\visual studio 2015\Projects\Bot\Bot\obj\Debug\Bot.pdb
+C:\Users\Airon\Documents\Visual Studio 2015\Projects\Chat-Bot\Bot\bin\Debug\Bot.exe.config
+C:\Users\Airon\Documents\Visual Studio 2015\Projects\Chat-Bot\Bot\obj\Debug\Bot.exe
+C:\Users\Airon\Documents\Visual Studio 2015\Projects\Chat-Bot\Bot\obj\Debug\Bot.pdb
+C:\Users\Airon\Documents\Visual Studio 2015\Projects\Chat-Bot\Bot\bin\Debug\Bot.exe
+C:\Users\Airon\Documents\Visual Studio 2015\Projects\Chat-Bot\Bot\bin\Debug\Bot.pdb
+C:\Users\Airon\Documents\Visual Studio 2015\Projects\Chat-Bot\Bot\obj\Debug\Bot.csprojResolveAssemblyReference.cache
+C:\Users\Airon\Documents\Visual Studio 2015\Projects\Chat-Bot\Bot\obj\Debug\Bot.Form.resources
+C:\Users\Airon\Documents\Visual Studio 2015\Projects\Chat-Bot\Bot\obj\Debug\Bot.Properties.Resources.resources
+C:\Users\Airon\Documents\Visual Studio 2015\Projects\Chat-Bot\Bot\obj\Debug\Bot.csproj.GenerateResource.Cache
