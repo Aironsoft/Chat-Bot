@@ -403,20 +403,20 @@ namespace Bot
         {
             string Reaction = null;
 
-            if(DoNotKnowReaction)
+            if (Message.Length >= 6 && Message.Substring(0, 6) == "*скажи")
             {
-                if (Message.Length >= 6 && Message.Substring(0, 6) == "*скажи")
+                Message = Message.Substring(6);
+                Message = Message.Trim();
+
+                if (!AllReactions.ContainsKey(Message))
                 {
-                    Message = Message.Substring(6);
-                    Message = Message.Trim();
+                    AllReactions.Add(Message, new Word(Message));
+                }
 
-                    if (!AllReactions.ContainsKey(Message))
-                    {
-                        AllReactions.Add(Message, new Word(Message));
-                    }
+                Reaction = Message;
 
-                    Reaction = Message;
-
+                if (DoNotKnowReaction)
+                {
                     if (UserLastReaction != "" && UserLastReaction != null)
                     {
                         if (AllReactions.ContainsKey(UserLastReaction))
@@ -429,12 +429,8 @@ namespace Bot
                         MyLastReaction = Message;
                     }
                 }
-                else
-                {
-                    DoNotKnowReaction = false;
-                }
             }
-            if (Message.Length>=7 && Message.Substring(0, 7) == "*добавь")
+            else if (Message.Length>=7 && Message.Substring(0, 7) == "*добавь")
             {
                 Message = Message.Substring(7);
                 Message = Message.Trim();
@@ -457,6 +453,19 @@ namespace Bot
                     //UserLastReaction = "";
                     MyLastReaction = Message;
                 }
+            }
+            else if (Message.Length >= 6 && Message.Substring(0, 6) == "*удали")
+            {
+                //Message = Message.Substring(6);
+                //Message = Message.Trim();
+
+                if (AllReactions.ContainsKey(MyLastReaction))
+                {
+                    AllReactions.Remove(MyLastReaction);
+                }
+
+                Reaction = "Удалено";
+
             }
 
             return Reaction;
