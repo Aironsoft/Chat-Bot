@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Speech.Synthesis;
 
 namespace Bot
 {
@@ -100,6 +101,10 @@ namespace Bot
 
             Serializator srz = new Serializator();
             srz.Serialize(this);
+
+            SpeechSynthesizer Voice = new SpeechSynthesizer();
+            Voice.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Teen);
+            Voice.SpeakAsync(Reaction);
 
             return Reaction;
         }
